@@ -1,0 +1,137 @@
+@font-face{
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+h1{
+	text-align: center;
+	font-size: 30px;
+	color: red;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	position:relative;
+}
+
+div{
+	position: relative;
+	margin: 2px;
+	padding: 20px;
+}
+
+#div1{
+	border: 1px dashed black;
+	background-color: #f7f7f7;
+	height: 150px;
+	float: left;
+}
+
+#div2{
+	border: 1px dashed black;
+	background-color: #f7f7f7;
+	height: 150px;
+	float: left;
+}
+
+#div3{
+	border: 1px dashed black;
+	background-color: #f7f7f7;
+	height: 150px;
+	float:left;
+}
+
+p{
+	color: #000;
+}
+
+#p1 {
+	margin-top: 35px;
+}
+
+#p2{
+	margin-top: 35px;
+}
+
+#p3{
+	margin-top: 35px;
+}
+
+.title{
+	background-color: black;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 150px;
+
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid red;
+}
+
+/**Small devices**/
+@media (max-width: 767px){
+	* {
+		box-sizing: border-box;
+	}
+	#div1{
+		width: 100%;
+		overflow: hidden;
+	}
+	#div2{
+		width: 100%;
+		overflow: hidden;
+	}
+	#div3{
+		width: 100%;
+		overflow: hidden;
+	}
+}
+
+/**Medium devices**/
+@media (min-width: 768px) and (max-width: 991px){
+	* {
+		box-sizing: border-box;
+	}
+	#div1{
+		width: 50%;
+		overflow: hidden;
+	}
+	#div2{
+		width: 50%;
+		overflow: hidden;
+	}
+	#div3{
+		width: 100%;
+		overflow: hidden;
+	}
+}
+
+/**Large devices**/
+@media (min-width: 992px){
+	* {
+		box-sizing: border-box;
+	}
+	#div1{
+		width: 33%;
+		overflow: hidden;
+	}
+	#div2{
+		width: 33%;
+		overflow: hidden;
+	}
+	#div3{
+		width: 33%;
+		overflow: hidden;
+	}
+}
